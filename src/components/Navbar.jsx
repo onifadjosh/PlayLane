@@ -77,13 +77,13 @@ export default function Nav() {
   return (
     <>
       <div
-        className={`font-[600] text-[20px] leading-[28px] flex w-full justify-center fixed left-0 right-0 text-[#FFFFFF] z-[80] transition-all duration-300 ${
-          isScrolled ? "/bg-[#0A8A58] py-[10px]" : "bg-transparent py-0"
+        className={`font-[600] text-[20px] leading-[28px] mt-[20px] flex w-full justify-center fixed left-0 right-0 text-[#FFFFFF] z-[80] transition-all duration-300 ${
+          isScrolled ? "/bg-[#0A8A58] md:py-[10px]" : "bg-transparent py-0"
         }`}
       >
         <div
           id="navbar"
-          className={`mx-auto barbar pl-[24px] md:pl-[32px] border-[1.77px] border-[#FFFFFF1A] pr-[10px] md:pr-[16px] flex justify-between items-center backdrop-blur-[20px] w-fit py-[10px] md:py-[10px] gap-[64px] rounded-[4000px] ${
+          className={`mx-auto barbar pl-[24px] md:pl-[32px] border-[1.77px] border-[#FFFFFF1A] pr-[10px] md:pr-[16px] flex justify-between items-center backdrop-blur-[20px] w-fit /md:py-[10px] md:py-[10px] gap-[64px] rounded-[4000px] ${
             isOpen ? "active" : ""
           } ${
             isScrolled

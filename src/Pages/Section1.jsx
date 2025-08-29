@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useTheme } from "../context/ThemeContext";
+
 
 export default function Section1() {
-  const { isDarkMode } = useTheme();
+
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
   const sectionRef = useRef(null);
@@ -67,9 +67,7 @@ export default function Section1() {
   return (
     <div
       ref={sectionRef}
-      className={`min-h-[50vh] w-full px-[60px] font-sans overflow-x-hidden relative transition-colors duration-300 ${
-        isDarkMode ? 'bg-[#0d1117] text-white' : 'bg-[#f8f9fa] text-black'
-      }`}
+      className={`min-h-[80vh] flex justify-center items-center w-full px-[24px] md:px-[60px] font-sans overflow-x-hidden relative transition-colors duration-300 bg-black text-black`}
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">

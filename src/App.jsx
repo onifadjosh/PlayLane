@@ -6,7 +6,6 @@ import Section1 from "./Pages/Section1";
 import Nav from "./components/Navbar";
 import AnimatedCursor from "./components/AnimatedCursor";
 import Landing from "./Pages/Landing";
-import ThemeToggle from "./components/ThemeToggle";
 import Section2 from "./Pages/Section2";
 import Section3 from "./Pages/Section3";
 import Section5 from "./Pages/Section5";
@@ -17,13 +16,13 @@ const App = () => {
   return (
     <div>
       <AnimatedCursor />
-      <ThemeToggle />
+
       <Nav />
       <Routes>
         <Route path="/" element={
           <>
             <Landing />
-            <Section1 />
+            <Section1/>
             <Section2 />
             <Section3/>
             
